@@ -81,15 +81,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "project-name:build",
-            "proxyConfig": "src/proxy.config.json"
+            "proxyConfig": "src/proxy.config.json",
+            "buildTarget": "project-name:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "yoga:build:production"
+              "buildTarget": "yoga:build:production"
             },
             "development": {
-              "browserTarget": "yoga:build:development"
+              "buildTarget": "yoga:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "yoga:build"
+            "buildTarget": "yoga:build"
           }
         },
         "test": {
