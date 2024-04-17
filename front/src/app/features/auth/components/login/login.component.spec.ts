@@ -13,16 +13,23 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { expect } from '@jest/globals';
 import { SessionService } from 'src/app/services/session.service';
 
+import { of } from 'rxjs';
 import { LoginComponent } from './login.component';
+import { AuthService } from '../../services/auth.service';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
+  let authService: AuthService;
 
   beforeEach(async () => {
+    const authServiceMock = {
+      login: jest.fn().mockReturnValue(of({}))
+    };
+
     await TestBed.configureTestingModule({
       declarations: [LoginComponent],
-      providers: [SessionService],
+      providers: [{ provide: AuthService, useValue: authServiceMock }],
       imports: [
         RouterTestingModule,
         BrowserAnimationsModule,
@@ -36,10 +43,16 @@ describe('LoginComponent', () => {
       .compileComponents();
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
+    authService = TestBed.inject(AuthService);
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should call login on the AuthService when login is called', () => {
+    component.submit();
+    expect(authService.login).toHaveBeenCalled();
   });
 });
