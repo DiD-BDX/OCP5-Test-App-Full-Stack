@@ -1,64 +1,98 @@
 import { HttpClientModule } from '@angular/common/http';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import {  ReactiveFormsModule } from '@angular/forms';
-//import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
-import { MatCardModule } from '@angular/material/card';
-//import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from '@angular/material/icon';
-//import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
-import { MatInputModule } from '@angular/material/input';
-//import { MatLegacySelectModule as MatSelectModule } from '@angular/material/legacy-select';
-import { MatSelectModule } from '@angular/material/select';
-//import { MatLegacySnackBarModule as MatSnackBarModule } from '@angular/material/legacy-snack-bar';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterTestingModule } from '@angular/router/testing';
+
 import { expect } from '@jest/globals';
 import { SessionService } from 'src/app/services/session.service';
 import { SessionApiService } from '../../services/session-api.service';
 
 import { FormComponent } from './form.component';
+import { FormBuilder, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { ActivatedRoute, Router } from '@angular/router';
+import { of } from 'rxjs';
+import { TeacherService } from '../../../../services/teacher.service';
 
 describe('FormComponent', () => {
   let component: FormComponent;
   let fixture: ComponentFixture<FormComponent>;
+  let httpTestingController: HttpTestingController;
+  let formBuilder: FormBuilder;
 
-  const mockSessionService = {
-    sessionInformation: {
-      admin: true
-    }
-  } 
+  const sessionApiServiceMock = {
+    detail: jest.fn().mockReturnValue(of({})),
+    create: jest.fn().mockReturnValue(of({})),
+    update: jest.fn().mockReturnValue(of({}))
+  };
+
+  const sessionServiceMock = {
+    sessionInformation: { admin: true }
+  };
+
+  const routerMock = {
+    navigate: jest.fn(),
+    url: '/update'
+  };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-
-      imports: [
-        RouterTestingModule,
-        HttpClientModule,
-        MatCardModule,
-        MatIconModule,
-        MatFormFieldModule,
-        MatInputModule,
-        ReactiveFormsModule, 
-        MatSnackBarModule,
-        MatSelectModule,
-        BrowserAnimationsModule
-      ],
+      imports: [HttpClientTestingModule],
+      declarations: [FormComponent],
       providers: [
-        { provide: SessionService, useValue: mockSessionService },
-        SessionApiService
-      ],
-      declarations: [FormComponent]
-    })
-      .compileComponents();
+        FormBuilder,
+        MatSnackBar,
+        { provide: ActivatedRoute, useValue: { snapshot: { paramMap: { get: () => '1' } } } },
+        { provide: SessionApiService, useValue: sessionApiServiceMock },
+        { provide: SessionService, useValue: sessionServiceMock },
+        TeacherService,
+        { provide: Router, useValue: routerMock }
+      ]
+    }).compileComponents();
 
+    httpTestingController = TestBed.inject(HttpTestingController);
+    formBuilder = new FormBuilder();
+  });
+
+  beforeEach(() => {
     fixture = TestBed.createComponent(FormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  afterEach(() => {
+    httpTestingController.verify(); // Vérifiez qu'il n'y a pas de requêtes HTTP en attente à la fin de chaque test
+  });
+
+  test('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  test('should initialize form for update', () => {
+    expect(sessionApiServiceMock.detail).toHaveBeenCalledWith('1');
+    expect(component.onUpdate).toBe(true);
+  });
+
+  test('should submit form for create', () => {
+    component.onUpdate = false;
+    component.submit();
+    expect(sessionApiServiceMock.create).toHaveBeenCalled();
+  });
+
+  test('should submit form for update', () => {
+    component.onUpdate = true;
+    component.submit();
+    expect(sessionApiServiceMock.update).toHaveBeenCalled();
+  });
+
+  test('should be invalid when a required field is missing', () => {
+    // Rendre le formulaire invalide
+    const formBuilder = new FormBuilder();
+    component.sessionForm = formBuilder.group({
+      name: ['', Validators.required]
+    });
+  
+    component.submit();
+  
+    expect(component.sessionForm?.valid).toBeFalsy();
   });
 });

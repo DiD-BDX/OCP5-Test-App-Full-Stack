@@ -5,9 +5,9 @@ module.exports = {
   preset: 'jest-preset-angular',
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
   bail: false,
-  verbose: false,
-  collectCoverage: false,
-  coverageDirectory: './coverage/jest',
+  verbose: true,
+  collectCoverage: true,
+  coverageDirectory: './coverage',
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageThreshold: {
