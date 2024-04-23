@@ -108,26 +108,25 @@ describe('DetailComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('should fetch session on init', () => {
+  test('should fetch session on init', () => { // test d'integration
     expect(sessionApiService.detail).toHaveBeenCalled();
   });
 
-  test('should fetch teacher when session is fetched', () => {
+  test('should fetch teacher when session is fetched', () => { // test d'integration
     expect(teacherService.detail).toHaveBeenCalledWith(teacherId.toString());
     expect(component.teacher).toEqual(teacher);
   });
 
-  test('should delete session and navigate to sessions', () => {
+  test('should delete session and navigate to sessions', () => { // test d'integration
     // Act
     component.delete();
-
     // Assert
     expect(sessionApiService.delete).toHaveBeenCalled();
     expect(matSnackBar.open).toHaveBeenCalledWith('Session deleted !', 'Close', { duration: 3000 });
     expect(router.navigate).toHaveBeenCalledWith(['sessions']);
   });
 
-  test('should participate in session', () => {
+  test('should participate in session', () => { // test d'integration
     // Act
     component.participate();
 
@@ -135,7 +134,7 @@ describe('DetailComponent', () => {
     expect(sessionApiService.participate).toHaveBeenCalled();
   });
 
-  test('should unparticipate in session', () => {
+  test('should unparticipate in session', () => { // test d'integration
     // Act
     component.unParticipate();
 

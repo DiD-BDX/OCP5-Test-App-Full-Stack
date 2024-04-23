@@ -65,23 +65,21 @@ describe('ListComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('should call all on the SessionApiService when component is created', () => {
+  test('should call all on the SessionApiService when component is created', () => { // test d'integration
     expect(sessionApiService.all).toHaveBeenCalled();
   });
 
-  test('should get sessionInformation from SessionService', () => {
+  test('should get sessionInformation from SessionService', () => { // test d'integration
     expect(component.user).toBe(sessionService.sessionInformation);
   });
 
-  test('should show "create" and "update" buttons for admin user', () => {
+  test('should show "create" and "update" buttons for admin user', () => { // test d'integration
     // Arrange
     if (sessionService.sessionInformation) {
       sessionService.sessionInformation.admin = true;
     }
-
     // Act
     fixture.detectChanges();
-
     // Assert
     const createButton = fixture.debugElement.nativeElement.querySelector('[data-testid="create-button"]');
     const updateButton = fixture.debugElement.nativeElement.querySelector('[data-testid="update-button"]');
@@ -89,15 +87,13 @@ describe('ListComponent', () => {
     expect(updateButton).not.toBeNull();
   });
 
-  test('should not show "create" and "update" buttons for non-admin user', () => {
+  test('should not show "create" and "update" buttons for non-admin user', () => { // test d'integration
     // Arrange
     if (sessionService.sessionInformation) {
       sessionService.sessionInformation.admin = false;
     }
-
     // Act
     fixture.detectChanges();
-
     // Assert
     const createButton = fixture.debugElement.nativeElement.querySelector('[data-testid="create-button"]');
     const updateButton = fixture.debugElement.nativeElement.querySelector('[data-testid="update-button"]');

@@ -21,14 +21,14 @@ describe('UserService', () => {
     httpTestingController.verify(); // Vérifiez qu'il n'y a pas de requêtes HTTP en attente à la fin de chaque test
   });
 
-  test('should retrieve user by id', () => {
+  test('should retrieve user by id', () => { // test d'integration
     service.getById('1').subscribe();
 
     const req = httpTestingController.expectOne('api/user/1');
     expect(req.request.method).toEqual('GET');
   });
 
-  test('should delete user', () => {
+  test('should delete user', () => { // test d'integration
     service.delete('1').subscribe();
 
     const req = httpTestingController.expectOne('api/user/1');

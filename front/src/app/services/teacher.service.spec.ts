@@ -21,14 +21,14 @@ describe('TeacherService', () => {
     httpTestingController.verify(); // Vérifiez qu'il n'y a pas de requêtes HTTP en attente à la fin de chaque test
   });
 
-  test('should retrieve all teachers', () => {
+  test('should retrieve all teachers', () => { // test d'integration
     service.all().subscribe();
 
     const req = httpTestingController.expectOne('api/teacher');
     expect(req.request.method).toEqual('GET');
   });
 
-  test('should retrieve teacher detail', () => {
+  test('should retrieve teacher detail', () => { // test d'integration
     service.detail('1').subscribe();
 
     const req = httpTestingController.expectOne('api/teacher/1');

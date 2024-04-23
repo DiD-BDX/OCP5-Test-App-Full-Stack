@@ -67,51 +67,43 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should call login on the AuthService when submit is called', () => {
+  it('should call login on the AuthService when submit is called', () => { // test d'integration
     // Arrange
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(authService.login).toHaveBeenCalled();
   });
 
-  it('should call logIn on the SessionService when login is successful', () => {
+  it('should call logIn on the SessionService when login is successful', () => { // test d'integration
     // Arrange
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(sessionService.logIn).toHaveBeenCalled();
   });
 
-  it('should navigate to /sessions when login is successful', () => {
+  it('should navigate to /sessions when login is successful', () => { // test d'integration
     // Arrange
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(router.navigate).toHaveBeenCalledWith(['/sessions']);
   });
 
-  it('should set onError to true when login fails', () => {
+  it('should set onError to true when login fails', () => { // test d'integration
     // Arrange
     authService.login = jest.fn().mockReturnValue(throwError(() => new Error('error')));
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(component.onError).toBe(true);
   });
@@ -119,10 +111,8 @@ describe('LoginComponent', () => {
   it('should set email field as invalid when it is empty', () => {
     // Arrange
     component.form.controls['email'].setValue('');
-
     // Act
     fixture.detectChanges();
-
     // Assert
     expect(component.form.controls['email'].invalid).toBe(true);
   });
@@ -130,10 +120,8 @@ describe('LoginComponent', () => {
   it('should set password field as invalid when it is empty', () => {
     // Arrange
     component.form.controls['password'].setValue('');
-
     // Act
     fixture.detectChanges();
-
     // Assert
     expect(component.form.controls['password'].invalid).toBe(true);
   });

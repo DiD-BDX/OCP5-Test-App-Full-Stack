@@ -26,14 +26,14 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('should return logged in status', (done) => {
+  test('should return logged in status', (done) => { // test d'integration
     component.$isLogged().subscribe(isLogged => {
       expect(isLogged).toBe(true);
       done();
     });
   });
 
-  test('should log out user', () => {
+  test('should log out user', () => { // test d'integration
     component.logout();
 
     expect(sessionServiceMock.logOut).toHaveBeenCalled();

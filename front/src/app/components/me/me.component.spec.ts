@@ -37,7 +37,7 @@ describe('MeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('should get user on init', () => {
+  test('should get user on init', () => { // test d'integration
     component.ngOnInit();
     expect(userServiceMock.getById).toHaveBeenCalledWith('1');
   });
@@ -48,12 +48,12 @@ describe('MeComponent', () => {
     expect(spy).toHaveBeenCalled();
   });
 
-  test('should log out user', () => {
+  test('should log out user', () => { // test d'integration
     sessionServiceMock.logOut();
     expect(sessionServiceMock.logOut).toHaveBeenCalled();
   });
 
-  test('should delete user', () => {
+  test('should delete user', () => { // test d'integration
     component.delete();
     expect(userServiceMock.delete).toHaveBeenCalledWith('1');
     expect(matSnackBarMock.open).toHaveBeenCalledWith('Your account has been deleted !', 'Close', { duration: 3000 });

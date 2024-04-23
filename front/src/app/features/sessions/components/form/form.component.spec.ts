@@ -67,18 +67,18 @@ describe('FormComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('should initialize form for update', () => {
+  test('should initialize form for update', () => { // test d'integration
     expect(sessionApiServiceMock.detail).toHaveBeenCalledWith('1');
     expect(component.onUpdate).toBe(true);
   });
 
-  test('should submit form for create', () => {
+  test('should submit form for create', () => { // test d'integration
     component.onUpdate = false;
     component.submit();
     expect(sessionApiServiceMock.create).toHaveBeenCalled();
   });
 
-  test('should submit form for update', () => {
+  test('should submit form for update', () => { // test d'integration
     component.onUpdate = true;
     component.submit();
     expect(sessionApiServiceMock.update).toHaveBeenCalled();
@@ -90,9 +90,7 @@ describe('FormComponent', () => {
     component.sessionForm = formBuilder.group({
       name: ['', Validators.required]
     });
-  
     component.submit();
-  
     expect(component.sessionForm?.valid).toBeFalsy();
   });
 });

@@ -23,7 +23,7 @@ describe('AuthService', () => {
     httpTestingController.verify(); // Vérifiez qu'il n'y a pas de requêtes HTTP en attente à la fin de chaque test
   });
 
-  test('should register user', () => {
+  test('should register user', () => { // test d'integration
     const registerRequest: RegisterRequest = { email: 'test@test.com', password: 'password', firstName: 'John', lastName: 'Doe'};
     service.register(registerRequest).subscribe();
 
@@ -32,7 +32,7 @@ describe('AuthService', () => {
     expect(req.request.body).toEqual(registerRequest);
   });
 
-  test('should log in user', () => {
+  test('should log in user', () => { // test d'integration
     const loginRequest: LoginRequest = { email: 'test@test.com', password: 'password' };
     service.login(loginRequest).subscribe();
 

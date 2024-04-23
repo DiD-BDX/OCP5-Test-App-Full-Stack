@@ -44,45 +44,39 @@ describe('RegisterComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('should call register on the AuthService when submit is called', () => {
+  test('should call register on the AuthService when submit is called', () => { // test d'integration
     // Arrange
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['firstName'].setValue('Test');
     component.form.controls['lastName'].setValue('User');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(authService.register).toHaveBeenCalled();
   });
 
-  test('should navigate to /login when register is successful', () => {
+  test('should navigate to /login when register is successful', () => { // test d'integration
     // Arrange
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['firstName'].setValue('Test');
     component.form.controls['lastName'].setValue('User');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(router.navigate).toHaveBeenCalledWith(['/login']);
   });
 
-  test('should set onError to true when register fails', () => {
+  test('should set onError to true when register fails', () => { // test d'integration
     // Arrange
     jest.spyOn(authService, 'register').mockReturnValue(throwError(() => new Error('error')));
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['firstName'].setValue('Test');
     component.form.controls['lastName'].setValue('User');
     component.form.controls['password'].setValue('password');
-
     // Act
     component.submit();
-
     // Assert
     expect(component.onError).toBe(true);
   });
