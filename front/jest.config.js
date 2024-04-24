@@ -7,7 +7,7 @@ module.exports = {
   bail: false,
   verbose: true,
   collectCoverage: true,
-  coverageDirectory: './coverage',
+  coverageDirectory: './coverage/jest',
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageThreshold: {

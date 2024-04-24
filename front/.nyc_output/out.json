@@ -385,35 +385,35 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 48,
-      "4": 1,
-      "5": 1,
-      "6": 1,
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 463,
+      "4": 4,
+      "5": 4,
+      "6": 4,
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1
+      "10": 4,
+      "11": 11,
+      "12": 11,
+      "13": 11,
+      "14": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 48,
-      "3": 1,
+      "0": 11,
+      "1": 11,
+      "2": 463,
+      "3": 4,
       "4": 0,
-      "5": 1,
-      "6": 1
+      "5": 4,
+      "6": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -705,27 +705,27 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
-      "3": 0,
+      "0": 11,
+      "1": 2,
+      "2": 2,
+      "3": 2,
       "4": 0,
-      "5": 1,
-      "6": 0,
-      "7": 1,
-      "8": 1
+      "5": 11,
+      "6": 2,
+      "7": 11,
+      "8": 11
     },
     "f": {
-      "0": 1,
-      "1": 0,
-      "2": 0,
+      "0": 11,
+      "1": 2,
+      "2": 2,
       "3": 0,
-      "4": 0
+      "4": 2
     },
     "b": {
       "0": [
-        0,
-        0
+        2,
+        2
       ]
     },
     "inputSourceMap": {
@@ -2228,138 +2228,138 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
+      "0": 3,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 3,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
       "11": 0,
       "12": 0,
       "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 1,
-      "56": 0,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 6,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 2,
+      "25": 2,
+      "26": 2,
+      "27": 2,
+      "28": 2,
+      "29": 2,
+      "30": 2,
+      "31": 2,
+      "32": 2,
+      "33": 2,
+      "34": 2,
+      "35": 2,
+      "36": 2,
+      "37": 2,
+      "38": 2,
+      "39": 2,
+      "40": 2,
+      "41": 6,
+      "42": 4,
+      "43": 4,
+      "44": 4,
+      "45": 4,
+      "46": 4,
+      "47": 4,
+      "48": 4,
+      "49": 4,
+      "50": 4,
+      "51": 4,
+      "52": 4,
+      "53": 4,
+      "54": 4,
+      "55": 11,
+      "56": 2,
+      "57": 2,
+      "58": 2,
+      "59": 2,
+      "60": 2,
+      "61": 2,
       "62": 0,
       "63": 0,
       "64": 0,
       "65": 0,
       "66": 0,
-      "67": 1,
-      "68": 0,
-      "69": 1,
-      "70": 0,
-      "71": 0,
-      "72": 0,
+      "67": 11,
+      "68": 2,
+      "69": 11,
+      "70": 10,
+      "71": 2,
+      "72": 2,
       "73": 0,
-      "74": 0,
-      "75": 0,
-      "76": 0,
-      "77": 0,
-      "78": 0,
-      "79": 0,
-      "80": 0,
-      "81": 0,
-      "82": 0,
-      "83": 0,
-      "84": 0,
-      "85": 0,
-      "86": 1
+      "74": 2,
+      "75": 2,
+      "76": 2,
+      "77": 2,
+      "78": 2,
+      "79": 2,
+      "80": 2,
+      "81": 2,
+      "82": 2,
+      "83": 10,
+      "84": 8,
+      "85": 8,
+      "86": 11
     },
     "f": {
-      "0": 0,
-      "1": 0,
+      "0": 3,
+      "1": 3,
       "2": 0,
-      "3": 0,
-      "4": 1,
-      "5": 0,
-      "6": 0,
-      "7": 0,
+      "3": 6,
+      "4": 11,
+      "5": 2,
+      "6": 2,
+      "7": 2,
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 0,
-      "12": 0,
+      "11": 2,
+      "12": 10,
       "13": 0
     },
     "b": {
       "0": [
-        0,
-        0
+        1,
+        2
       ],
       "1": [
-        0,
-        0
+        1,
+        2
       ],
       "2": [
-        0,
-        0
+        2,
+        4
       ],
       "3": [
-        0,
-        0
+        4,
+        2
       ],
       "4": [
-        0,
-        0
+        2,
+        2
       ],
       "5": [
-        0,
-        0
+        2,
+        8
       ],
       "6": [
-        0,
-        0
+        8,
+        2
       ]
     },
     "inputSourceMap": {
@@ -2691,18 +2691,18 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
+      "0": 11,
+      "1": 11,
       "2": 0,
-      "3": 1,
+      "3": 11,
       "4": 0,
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 1
+      "8": 11
     },
     "f": {
-      "0": 1,
+      "0": 11,
       "1": 0,
       "2": 0
     },
@@ -3036,32 +3036,32 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
+      "0": 11,
+      "1": 4,
+      "2": 4,
+      "3": 6,
       "4": 0,
       "5": 0,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1
+      "6": 6,
+      "7": 11,
+      "8": 4,
+      "9": 11,
+      "10": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1
+      "0": 11,
+      "1": 4,
+      "2": 6,
+      "3": 4
     },
     "b": {
       "0": [
         0,
-        1
+        6
       ],
       "1": [
-        1,
-        1
+        4,
+        4
       ]
     },
     "inputSourceMap": {
@@ -3385,32 +3385,32 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
       "4": 0,
       "5": 0,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1
+      "6": 11,
+      "7": 11,
+      "8": 11,
+      "9": 11,
+      "10": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11
     },
     "b": {
       "0": [
         0,
-        1
+        11
       ],
       "1": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -3746,30 +3746,30 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 4,
+      "4": 4,
+      "5": 11,
+      "6": 11,
+      "7": 11,
+      "8": 11,
+      "9": 11,
+      "10": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1
+      "0": 11,
+      "1": 11,
+      "2": 4,
+      "3": 4,
+      "4": 11,
+      "5": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -4063,27 +4063,27 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 0,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 2,
+      "4": 7,
+      "5": 11,
+      "6": 11,
+      "7": 11,
+      "8": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 0,
-      "3": 1,
-      "4": 1
+      "0": 11,
+      "1": 11,
+      "2": 2,
+      "3": 7,
+      "4": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -5005,86 +5005,86 @@
       }
     },
     "s": {
-      "0": 8,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
+      "0": 40,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 1,
-      "14": 1,
-      "15": 42,
-      "16": 1,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 48,
+      "13": 4,
+      "14": 4,
+      "15": 438,
+      "16": 11,
+      "17": 11,
+      "18": 11,
+      "19": 11,
+      "20": 11,
+      "21": 11,
+      "22": 11,
+      "23": 11,
+      "24": 11,
+      "25": 11,
+      "26": 463,
       "27": 0,
       "28": 0,
-      "29": 1,
-      "30": 1,
-      "31": 1,
-      "32": 49,
-      "33": 1,
-      "34": 1,
-      "35": 1,
-      "36": 1,
-      "37": 1,
-      "38": 1,
-      "39": 1,
-      "40": 1,
-      "41": 1,
-      "42": 1,
-      "43": 49,
-      "44": 48,
-      "45": 48,
-      "46": 48,
-      "47": 1
+      "29": 11,
+      "30": 11,
+      "31": 11,
+      "32": 474,
+      "33": 11,
+      "34": 11,
+      "35": 11,
+      "36": 11,
+      "37": 11,
+      "38": 11,
+      "39": 11,
+      "40": 11,
+      "41": 11,
+      "42": 11,
+      "43": 474,
+      "44": 463,
+      "45": 463,
+      "46": 463,
+      "47": 11
     },
     "f": {
-      "0": 8,
+      "0": 40,
       "1": 0,
-      "2": 42,
-      "3": 1,
-      "4": 1,
-      "5": 48,
+      "2": 438,
+      "3": 11,
+      "4": 11,
+      "5": 463,
       "6": 0,
-      "7": 1,
-      "8": 49
+      "7": 11,
+      "8": 474
     },
     "b": {
       "0": [
-        1,
-        7
+        4,
+        36
       ],
       "1": [
-        1,
-        41
+        11,
+        427
       ],
       "2": [
-        1,
-        1
+        11,
+        11
       ],
       "3": [
-        1,
-        48
+        11,
+        463
       ],
       "4": [
-        48,
-        1
+        463,
+        11
       ]
     },
     "inputSourceMap": {
@@ -5418,30 +5418,30 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 2,
-      "3": 1,
-      "4": 2,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1
+      "0": 11,
+      "1": 9,
+      "2": 15,
+      "3": 6,
+      "4": 15,
+      "5": 11,
+      "6": 9,
+      "7": 11,
+      "8": 11
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 2,
-      "3": 1
+      "0": 11,
+      "1": 9,
+      "2": 15,
+      "3": 9
     },
     "b": {
       "0": [
-        1,
-        1
+        6,
+        9
       ],
       "1": [
-        1,
-        1
+        9,
+        9
       ]
     },
     "inputSourceMap": {
@@ -5645,22 +5645,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 11,
+      "1": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -5719,7 +5719,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 1
+      "0": 11
     },
     "f": {},
     "b": {},
@@ -5851,9 +5851,9 @@
       }
     },
     "s": {
-      "0": 1,
+      "0": 11,
       "1": 0,
-      "2": 1,
+      "2": 11,
       "3": 0
     },
     "f": {
@@ -5862,7 +5862,7 @@
     "b": {
       "0": [
         0,
-        1
+        11
       ]
     },
     "inputSourceMap": {
@@ -6927,100 +6927,100 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 0,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 40,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 1,
-      "31": 1,
-      "32": 1,
-      "33": 1,
-      "34": 2,
-      "35": 1,
-      "36": 1,
-      "37": 1,
-      "38": 1,
-      "39": 1,
-      "40": 1,
-      "41": 1,
-      "42": 1,
-      "43": 40,
-      "44": 39,
-      "45": 39,
-      "46": 39,
-      "47": 39,
-      "48": 39,
-      "49": 39,
-      "50": 39,
-      "51": 39,
-      "52": 39,
-      "53": 39,
-      "54": 39,
-      "55": 39,
-      "56": 1
+      "0": 9,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 11,
+      "5": 10,
+      "6": 10,
+      "7": 10,
+      "8": 10,
+      "9": 10,
+      "10": 10,
+      "11": 10,
+      "12": 7,
+      "13": 7,
+      "14": 4,
+      "15": 4,
+      "16": 3,
+      "17": 11,
+      "18": 10,
+      "19": 11,
+      "20": 311,
+      "21": 10,
+      "22": 10,
+      "23": 10,
+      "24": 10,
+      "25": 10,
+      "26": 7,
+      "27": 10,
+      "28": 10,
+      "29": 10,
+      "30": 10,
+      "31": 10,
+      "32": 10,
+      "33": 10,
+      "34": 11,
+      "35": 10,
+      "36": 10,
+      "37": 10,
+      "38": 10,
+      "39": 10,
+      "40": 10,
+      "41": 10,
+      "42": 10,
+      "43": 311,
+      "44": 301,
+      "45": 301,
+      "46": 301,
+      "47": 301,
+      "48": 301,
+      "49": 301,
+      "50": 301,
+      "51": 301,
+      "52": 301,
+      "53": 301,
+      "54": 301,
+      "55": 301,
+      "56": 11
     },
     "f": {
-      "0": 0,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 0,
-      "6": 1,
-      "7": 40,
-      "8": 1,
-      "9": 2
+      "0": 9,
+      "1": 11,
+      "2": 10,
+      "3": 7,
+      "4": 4,
+      "5": 3,
+      "6": 10,
+      "7": 311,
+      "8": 7,
+      "9": 11
     },
     "b": {
       "0": [
-        0,
-        0
+        3,
+        6
       ],
       "1": [
-        1,
-        1
+        10,
+        10
       ],
       "2": [
-        1,
-        39
+        10,
+        301
       ],
       "3": [
-        39,
-        1
+        301,
+        10
       ],
       "4": [
-        37,
-        2
+        288,
+        13
       ],
       "5": [
-        37,
-        2
+        288,
+        13
       ]
     },
     "inputSourceMap": {
@@ -7958,83 +7958,83 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 1,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 1,
-      "15": 0,
-      "16": 1,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 1
+      "0": 3,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 11,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 1,
+      "13": 1,
+      "14": 11,
+      "15": 2,
+      "16": 11,
+      "17": 92,
+      "18": 2,
+      "19": 2,
+      "20": 2,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 2,
+      "25": 2,
+      "26": 2,
+      "27": 2,
+      "28": 2,
+      "29": 2,
+      "30": 2,
+      "31": 2,
+      "32": 2,
+      "33": 2,
+      "34": 2,
+      "35": 2,
+      "36": 2,
+      "37": 2,
+      "38": 2,
+      "39": 2,
+      "40": 2,
+      "41": 92,
+      "42": 90,
+      "43": 90,
+      "44": 90,
+      "45": 90,
+      "46": 90,
+      "47": 90,
+      "48": 11
     },
     "f": {
-      "0": 0,
-      "1": 1,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0
+      "0": 3,
+      "1": 11,
+      "2": 2,
+      "3": 2,
+      "4": 1,
+      "5": 1,
+      "6": 2,
+      "7": 92,
+      "8": 2
     },
     "b": {
       "0": [
-        0,
-        0
+        1,
+        2
       ],
       "1": [
-        0,
-        0
+        2,
+        2
       ],
       "2": [
-        0,
-        0
+        2,
+        90
       ],
       "3": [
-        0,
-        0
+        90,
+        2
       ]
     },
     "inputSourceMap": {
@@ -8271,22 +8271,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 11,
+      "1": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -8480,22 +8480,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 11,
+      "1": 11,
+      "2": 11,
+      "3": 11,
+      "4": 11,
+      "5": 11,
+      "6": 11
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 11,
+      "1": 11
     },
     "b": {
       "0": [
-        1,
-        1
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -8954,37 +8954,37 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
       "4": 0,
       "5": 0,
       "6": 0,
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4
     },
     "f": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
+      "0": 4,
+      "1": 4,
+      "2": 4,
       "3": 0,
       "4": 0,
       "5": 0,
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 1
+      "9": 4
     },
     "b": {
       "0": [
-        1,
-        1
+        4,
+        4
       ]
     },
     "inputSourceMap": {
@@ -9284,18 +9284,18 @@
       }
     },
     "s": {
-      "0": 1,
+      "0": 4,
       "1": 0,
       "2": 0,
       "3": 0,
       "4": 0,
-      "5": 1,
+      "5": 4,
       "6": 0,
-      "7": 1,
-      "8": 1
+      "7": 4,
+      "8": 4
     },
     "f": {
-      "0": 1,
+      "0": 4,
       "1": 0,
       "2": 0,
       "3": 0,
@@ -9760,7 +9760,7 @@
         },
         "end": {
           "line": 67,
-          "column": 169
+          "column": 170
         }
       },
       "42": {
@@ -12258,7 +12258,7 @@
       "130": 0,
       "131": 0,
       "132": 0,
-      "133": 1,
+      "133": 4,
       "134": 0,
       "135": 0,
       "136": 0,
@@ -12286,9 +12286,9 @@
       "158": 0,
       "159": 0,
       "160": 0,
-      "161": 1,
+      "161": 4,
       "162": 0,
-      "163": 1,
+      "163": 4,
       "164": 0,
       "165": 0,
       "166": 0,
@@ -12296,7 +12296,7 @@
       "168": 0,
       "169": 0,
       "170": 0,
-      "171": 1
+      "171": 4
     },
     "f": {
       "0": 0,
@@ -12309,7 +12309,7 @@
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 1,
+      "10": 4,
       "11": 0,
       "12": 0,
       "13": 0,
@@ -12489,13 +12489,13 @@
       ],
       "sourcesContent": [
         "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder } from '@angular/forms';\n//import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { ActivatedRoute, Router } from '@angular/router';\nimport { Teacher } from '../../../../interfaces/teacher.interface';\nimport { SessionService } from '../../../../services/session.service';\nimport { TeacherService } from '../../../../services/teacher.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-detail',\n  templateUrl: './detail.component.html',\n  styleUrls: ['./detail.component.scss']\n})\nexport class DetailComponent implements OnInit {\n  public session: Session | undefined;\n  public teacher: Teacher | undefined;\n\n  public isParticipate = false;\n  public isAdmin = false;\n\n  public sessionId: string;\n  public userId: string;\n\n  constructor(\n    private route: ActivatedRoute,\n    private fb: FormBuilder,\n    private sessionService: SessionService,\n    private sessionApiService: SessionApiService,\n    private teacherService: TeacherService,\n    private matSnackBar: MatSnackBar,\n    private router: Router) {\n    this.sessionId = this.route.snapshot.paramMap.get('id')!;\n    this.isAdmin = this.sessionService.sessionInformation!.admin;\n    this.userId = this.sessionService.sessionInformation!.id.toString();\n  }\n\n  public ngOnInit(): void {\n    this.fetchSession();\n  }\n\n  public back() {\n    window.history.back();\n  }\n\n  public delete(): void {\n    this.sessionApiService\n      .delete(this.sessionId)\n      .subscribe((_: any) => {\n          this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });\n          this.router.navigate(['sessions']);\n        }\n      );\n  }\n\n  public participate(): void {\n    this.sessionApiService.participate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\n  }\n\n  public unParticipate(): void {\n    this.sessionApiService.unParticipate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\n  }\n\n  private fetchSession(): void {\n    this.sessionApiService\n      .detail(this.sessionId)\n      .subscribe((session: Session) => {\n        this.session = session;\n        this.isParticipate = session.users.some(u => u === this.sessionService.sessionInformation!.id);\n        this.teacherService\n          .detail(session.teacher_id.toString())\n          .subscribe((teacher: Teacher) => this.teacher = teacher);\n      });\n  }\n\n}\n",
-        "<div class=\"m3\">\n  <mat-card *ngIf=\"session\">\n    <mat-card-title>\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n          <button mat-icon-button (click)=\"back()\">\n            <mat-icon>arrow_back</mat-icon>\n          </button>\n          <h1>{{session.name | titlecase}}</h1>\n        </div>\n        <div>\n          <button *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\">\n            <mat-icon>delete</mat-icon>\n            <span class=\"ml1\">Delete</span>\n          </button>\n          <div *ngIf=\"!isAdmin\">\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\">\n              <mat-icon>person_add</mat-icon>\n              <span class=\"ml1\">Participate</span>\n            </button>\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\">\n              <mat-icon>person_remove</mat-icon>\n              <span class=\"ml1\">Do not participate</span>\n            </button>\n\n          </div>\n\n\n        </div>\n      </div>\n    </mat-card-title>\n    <mat-card-subtitle *ngIf=\"teacher\">\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\n        <mat-icon>\n          people\n        </mat-icon>\n        <span class=\"ml1\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\n      </div>\n    </mat-card-subtitle>\n    <div mat-card-image fxLayoutAlign=\"center center\">\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n    </div>\n    <mat-card-content>\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            group\n          </mat-icon>\n          <span class=\"ml1\">{{ session.users.length }} attendees</span>\n        </div>\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            calendar_month\n          </mat-icon>\n          <span class=\"ml1\">{{ session.date | date: 'longDate'}}</span>\n        </div>\n      </div>\n      <div class=\"description\">\n        <p>Description:</p>\n        {{ session.description }}\n        <br>\n      </div>\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</div>\n"
+        "<div class=\"m3\">\n  <mat-card *ngIf=\"session\">\n    <mat-card-title>\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n          <button mat-icon-button (click)=\"back()\">\n            <mat-icon>arrow_back</mat-icon>\n          </button>\n          <h1>{{session.name | titlecase}}</h1>\n        </div>\n        <div>\n          <button data-testid=\"delete-button\" *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\">\n            <mat-icon>delete</mat-icon>\n            <span class=\"ml1\">Delete</span>\n          </button>\n          <div *ngIf=\"!isAdmin\">\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\">\n              <mat-icon>person_add</mat-icon>\n              <span class=\"ml1\">Participate</span>\n            </button>\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\">\n              <mat-icon>person_remove</mat-icon>\n              <span class=\"ml1\">Do not participate</span>\n            </button>\n\n          </div>\n\n\n        </div>\n      </div>\n    </mat-card-title>\n    <mat-card-subtitle *ngIf=\"teacher\">\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\n        <mat-icon>\n          people\n        </mat-icon>\n        <span class=\"ml1\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\n      </div>\n    </mat-card-subtitle>\n    <div mat-card-image fxLayoutAlign=\"center center\">\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n    </div>\n    <mat-card-content>\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            group\n          </mat-icon>\n          <span class=\"ml1\">{{ session.users.length }} attendees</span>\n        </div>\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            calendar_month\n          </mat-icon>\n          <span class=\"ml1\">{{ session.date | date: 'longDate'}}</span>\n        </div>\n      </div>\n      <div class=\"description\">\n        <p>Description:</p>\n        {{ session.description }}\n        <br>\n      </div>\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</div>\n"
       ],
-      "mappings": "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",
+      "mappings": "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",
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "0086b0c53276a0b780bd610649bad0229458f3e0"
+    "hash": "dcc25b205e6ddc831c50586e091add3d04bcc43e"
   },
   "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts": {
     "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts",
@@ -14563,7 +14563,7 @@
       "54": 0,
       "55": 0,
       "56": 0,
-      "57": 1,
+      "57": 4,
       "58": 0,
       "59": 0,
       "60": 0,
@@ -14591,9 +14591,9 @@
       "82": 0,
       "83": 0,
       "84": 0,
-      "85": 1,
+      "85": 4,
       "86": 0,
-      "87": 1,
+      "87": 4,
       "88": 0,
       "89": 0,
       "90": 0,
@@ -14609,7 +14609,7 @@
       "100": 0,
       "101": 0,
       "102": 0,
-      "103": 1
+      "103": 4
     },
     "f": {
       "0": 0,
@@ -14617,7 +14617,7 @@
       "2": 0,
       "3": 0,
       "4": 0,
-      "5": 1,
+      "5": 4,
       "6": 0,
       "7": 0,
       "8": 0,
@@ -16145,17 +16145,17 @@
       }
     },
     "s": {
-      "0": 1,
+      "0": 4,
       "1": 0,
-      "2": 1,
+      "2": 4,
       "3": 0,
-      "4": 6,
-      "5": 1,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 1,
+      "4": 12,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
       "11": 0,
       "12": 0,
       "13": 0,
@@ -16201,47 +16201,47 @@
       "53": 0,
       "54": 0,
       "55": 0,
-      "56": 1,
-      "57": 1,
-      "58": 1,
-      "59": 1,
-      "60": 5,
-      "61": 1,
-      "62": 1,
-      "63": 1,
-      "64": 6,
-      "65": 1,
-      "66": 1,
-      "67": 1,
-      "68": 1,
-      "69": 1,
-      "70": 1,
-      "71": 1,
-      "72": 1,
-      "73": 1,
-      "74": 6,
-      "75": 5,
-      "76": 5,
-      "77": 5,
-      "78": 5,
-      "79": 1
+      "56": 4,
+      "57": 4,
+      "58": 4,
+      "59": 4,
+      "60": 20,
+      "61": 4,
+      "62": 4,
+      "63": 4,
+      "64": 24,
+      "65": 4,
+      "66": 4,
+      "67": 4,
+      "68": 4,
+      "69": 4,
+      "70": 4,
+      "71": 4,
+      "72": 4,
+      "73": 4,
+      "74": 24,
+      "75": 20,
+      "76": 20,
+      "77": 20,
+      "78": 20,
+      "79": 4
     },
     "f": {
       "0": 0,
       "1": 0,
-      "2": 6,
+      "2": 12,
       "3": 0,
       "4": 0,
-      "5": 1,
-      "6": 1,
-      "7": 5,
-      "8": 1,
-      "9": 6
+      "5": 4,
+      "6": 4,
+      "7": 20,
+      "8": 4,
+      "9": 24
     },
     "b": {
       "0": [
-        1,
-        5
+        2,
+        10
       ],
       "1": [
         0,
@@ -16260,16 +16260,16 @@
         0
       ],
       "5": [
-        1,
-        1
+        4,
+        4
       ],
       "6": [
-        1,
-        5
+        4,
+        20
       ],
       "7": [
-        5,
-        1
+        20,
+        4
       ]
     },
     "inputSourceMap": {
@@ -16330,13 +16330,13 @@
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { SessionInformation } from '../../../../interfaces/sessionInformation.interface';\nimport { SessionService } from '../../../../services/session.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.scss']\n})\nexport class ListComponent {\n\n  public sessions$: Observable<Session[]> = this.sessionApiService.all();\n\n  constructor(\n    private sessionService: SessionService,\n    private sessionApiService: SessionApiService\n  ) { }\n\n  get user(): SessionInformation | undefined {\n    return this.sessionService.sessionInformation;\n  }\n}\n",
-        "<div class=\"list\">\n  <mat-card>\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\n      <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\n        <mat-icon>add</mat-icon>\n        <span class=\"ml1\">Create</span>\n      </button>\n    </mat-card-header>\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\n        <mat-card-header>\n          <mat-card-title>{{ session.name }}</mat-card-title>\n          <mat-card-subtitle>\n            Session on {{ session.date | date: 'longDate'}}\n          </mat-card-subtitle>\n        </mat-card-header>\n        <div mat-card-image fxLayoutAlign=\"center center\">\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n        </div>\n        <mat-card-content>\n          <p>\n            {{ session.description }}\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\">\n            <mat-icon>search</mat-icon>\n            <span class=\"ml1\">Detail</span>\n          </button>\n          <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\n                  [routerLink]=\"['update',session.id]\">\n            <mat-icon>edit</mat-icon>\n            <span class=\"ml1\">Edit</span>\n          </button>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n  </mat-card>\n</div>\n"
+        "<div class=\"list\">\n  <mat-card>\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\n      <button data-testid=\"create-button\" *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\n        <mat-icon>add</mat-icon>\n        <span class=\"ml1\">Create</span>\n      </button>\n    </mat-card-header>\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\n        <mat-card-header>\n          <mat-card-title>{{ session.name }}</mat-card-title>\n          <mat-card-subtitle>\n            Session on {{ session.date | date: 'longDate'}}\n          </mat-card-subtitle>\n        </mat-card-header>\n        <div mat-card-image fxLayoutAlign=\"center center\">\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n        </div>\n        <mat-card-content>\n          <p>\n            {{ session.description }}\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\">\n            <mat-icon>search</mat-icon>\n            <span class=\"ml1\">Detail</span>\n          </button>\n          <button data-testid=\"update-button\" *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\n                  [routerLink]=\"['update',session.id]\">\n            <mat-icon>edit</mat-icon>\n            <span class=\"ml1\">Edit</span>\n          </button>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n  </mat-card>\n</div>\n"
       ],
-      "mappings": "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",
+      "mappings": "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",
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b3ac4bc5435cdb2b5e1297e63bc0db1d1cfd4d21"
+    "hash": "79d9b82a146baf1a4fd03cdc80c8aa742fbcb459"
   },
   "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts": {
     "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts",
@@ -16501,22 +16501,22 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 4,
+      "1": 4
     },
     "b": {
       "0": [
-        1,
-        1
+        4,
+        4
       ]
     },
     "inputSourceMap": {
@@ -16721,23 +16721,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1,
-      "5": 1,
-      "6": 1,
-      "7": 1
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4
     },
     "f": {
-      "0": 1,
-      "1": 1
+      "0": 4,
+      "1": 4
     },
     "b": {
       "0": [
-        1,
-        1
+        4,
+        4
       ]
     },
     "inputSourceMap": {
