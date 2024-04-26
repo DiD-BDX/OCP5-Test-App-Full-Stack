@@ -57,4 +57,5 @@ public class UserDetailsImplTest {
         assertTrue(userDetails.equals(sameUserDetails));
         assertTrue(!userDetails.equals(differentUserDetails));
     }
+   
 }
