@@ -18,8 +18,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -31,6 +33,7 @@ import static org.hamcrest.Matchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
+@ActiveProfiles("test")
 public class UserControllerIntegrationTest {
 
     @Autowired
@@ -116,5 +119,18 @@ public class UserControllerIntegrationTest {
         this.mockMvc.perform(delete("/api/user/{id}", userId)
                 .header("Authorization", "Bearer " + token))
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    void shouldThrowBadRequestExceptionForDuplicateUsername() throws Exception {
+        String username = "test@example.com";
+        String password = "password";
+        //final Long userId = 1L;
+
+        this.mockMvc.perform(post("/api/auth/register")
+            .header("Authorization", "Bearer " + token)
+            .param("username", username)
+            .param("password", password))
+            .andExpect(MockMvcResultMatchers.status().isBadRequest());
     }
 }
