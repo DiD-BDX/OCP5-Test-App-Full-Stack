@@ -22,6 +22,12 @@
   - [Rapport de couverture des tests unitaires et d'intégration](#rapport-de-couverture-des-tests-unitaires-et-dintégration)
 - [6 - Tests End-to-End (E2E)](#6---tests-end-to-end-e2e)
   - [Rapport de couverture des tests E2E](#rapport-de-couverture-des-tests-e2e)
+- [NOTE DE VERSIONS](#note-de-versions)
+    - [Angular](#angular)
+    - [VERSION DES PACKAGES](#version-des-packages)
+    - [Jest](#jest)
+    - [Cypress](#cypress)
+    - [Jacoco](#jacoco)
 
 # 1 - INSTALLATION DE LA BASE DE DONNÉE
 La base de donnée est une base Open Source MySQL (SQL, « Structured Query Language » est un langage standardisé utilisé
@@ -162,3 +168,38 @@ Frameworks et outils utilisés:
 ## Rapport de couverture des tests E2E
 - Pour acceder au rapport de couverture généré par Cypress, accedez au fichier: `front/coverage/lcov-report/index.html`
   ![alt text](<ressources/images/Cypress E2E.png>)
+
+# NOTE DE VERSIONS
+### Angular
+`ng version`
+- Angular CLI: 17.3.3
+- Node: 20.12.1
+- Package Manager: npm 10.5.0
+
+### VERSION DES PACKAGES
+- @angular-devkit/architect       0.1703.3
+- @angular-devkit/build-angular   17.3.5
+- @angular-devkit/core            14.2.13
+- @angular-devkit/schematics      14.2.13
+- @angular/flex-layout            15.0.0-beta.42
+- @schematics/angular             14.2.13
+- rxjs                            7.5.6
+- typescript                      5.4.4
+- webpack                         5.91.0
+- zone.js                         0.14.4
+
+### Jest
+`jest --version`
+
+jest version 29.7.0
+
+### Cypress
+`cypress version`
+- Cypress package version: 13.7.2
+- Cypress binary version: 13.7.2
+- Electron version: 27.1.3
+- Bundled Node version: 18.17.1
+
+### Jacoco
+Jacoco version 0.8.5
+
