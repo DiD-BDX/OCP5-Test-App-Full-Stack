@@ -1,29 +1,42 @@
-import { HttpClientModule } from '@angular/common/http';
-import { TestBed } from '@angular/core/testing';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterTestingModule } from '@angular/router/testing';
 import { expect } from '@jest/globals';
 
 import { AppComponent } from './app.component';
-
+import { of } from 'rxjs';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        HttpClientModule,
-        MatToolbarModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
+  let component: AppComponent;
+  let authServiceMock: any;
+  let routerMock: any;
+  let sessionServiceMock: any;
+
+  beforeEach(() => {
+    authServiceMock = {};
+    routerMock = {
+      navigate: jest.fn()
+    };
+    sessionServiceMock = {
+      $isLogged: jest.fn().mockReturnValue(of(true)),
+      logOut: jest.fn()
+    };
+
+    component = new AppComponent(authServiceMock, routerMock, sessionServiceMock);
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+  test('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  test('should return logged in status', (done) => { // test d'integration
+    component.$isLogged().subscribe(isLogged => {
+      expect(isLogged).toBe(true);
+      done();
+    });
+  });
+
+  test('should log out user', () => { // test d'integration
+    component.logout();
+
+    expect(sessionServiceMock.logOut).toHaveBeenCalled();
+    expect(routerMock.navigate).toHaveBeenCalledWith(['']);
   });
 });
