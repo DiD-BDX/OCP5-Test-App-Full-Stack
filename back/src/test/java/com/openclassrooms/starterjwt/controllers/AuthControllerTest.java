@@ -50,7 +50,6 @@ public class AuthControllerTest {
         Authentication authentication = mock(Authentication.class);
 
         // Créer un objet UserDetailsImpl
-        //UserDetailsImpl userDetails = new UserDetailsImpl(1L, "test@test.com", "password", null, null, false);
         UserDetailsImpl userDetails = UserDetailsImpl.builder()
             .id(1L)
             .username("test@test.com")

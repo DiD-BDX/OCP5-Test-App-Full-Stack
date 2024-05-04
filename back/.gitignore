@@ -29,6 +29,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Global ###
 **/.DS_Store
 .DS_Store
 *.DS_Store
