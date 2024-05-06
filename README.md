@@ -118,7 +118,7 @@ Utilisation des Frameworks:
 - Spring Boot Test : Ce framework est utilisé pour intégrer les tests avec Spring Boot. 
 - MockMvc : C'est un framework de Spring pour tester les contrôleurs Spring MVC. Il permet d'envoyer des requêtes HTTP à l'application sans démarrer un serveur complet.
 
-De plus, utilisation de Jacobo pour le rapport de couverture de tests: Jacoco (Java Code Coverage) est un outil de couverture de code pour Java. Il est utilisé pour mesurer la quantité de code qui est exécutée pendant les tests, ce qui aide à identifier les parties du code qui pourraient nécessiter plus de tests.
+De plus, utilisation de Jacoco pour le rapport de couverture de tests: Jacoco (Java Code Coverage) est un outil de couverture de code pour Java. Il est utilisé pour mesurer la quantité de code qui est exécutée pendant les tests, ce qui aide à identifier les parties du code qui pourraient nécessiter plus de tests.
 
 ## Tests unitaires & d'intégration
 - Naviguer vers le répertoire du projet (partie Back-End) :`cd back`

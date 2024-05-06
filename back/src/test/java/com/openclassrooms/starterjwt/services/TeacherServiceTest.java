@@ -1,65 +1,65 @@
+// Ce package contient les tests pour la classe TeacherService
 package com.openclassrooms.starterjwt.services;
 
+// Importations nécessaires
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
-
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.boot.test.context.SpringBootTest;
-
 import com.openclassrooms.starterjwt.models.Teacher;
 import com.openclassrooms.starterjwt.repository.TeacherRepository;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-@SpringBootTest
+// Classe de test pour TeacherService
 public class TeacherServiceTest {
 
+    // Injection des mocks
     @InjectMocks
     private TeacherService teacherService;
-
     @Mock
     private TeacherRepository teacherRepository;
 
+    // Test pour vérifier que la méthode findAll() fonctionne correctement
     @Test
     public void testFindAll() {
-        // Créer un objet Teacher
+        // Création d'un objet Teacher
         Teacher teacher = new Teacher();
         teacher.setId(1L);
 
-        // Configurer le mock pour renvoyer cet objet
+        // Configuration du mock pour retourner cet objet lors de l'appel à teacherRepository.findAll()
         when(teacherRepository.findAll()).thenReturn(Arrays.asList(teacher));
 
-        // Appeler la méthode à tester
+        // Appel de la méthode à tester
         List<Teacher> teachers = teacherService.findAll();
 
-        // Vérifier que la méthode findAll a été appelée
+        // Vérification que la méthode findAll() du repository a été appelée une fois
         verify(teacherRepository, times(1)).findAll();
 
-        // Vérifier que le résultat est correct
+        // Vérification que le résultat est correct
         assertEquals(1, teachers.size());
         assertEquals(teacher, teachers.get(0));
     }
 
+    // Test pour vérifier que la méthode findById() fonctionne correctement
     @Test
     public void testFindById() {
-        // Créer un objet Teacher
+        // Création d'un objet Teacher
         Teacher teacher = new Teacher();
         teacher.setId(1L);
 
-        // Configurer le mock pour renvoyer cet objet
+        // Configuration du mock pour retourner cet objet lors de l'appel à teacherRepository.findById()
         when(teacherRepository.findById(1L)).thenReturn(Optional.of(teacher));
 
-        // Appeler la méthode à tester
+        // Appel de la méthode à tester
         Teacher foundTeacher = teacherService.findById(1L);
 
-        // Vérifier que la méthode findById a été appelée
+        // Vérification que la méthode findById() du repository a été appelée une fois avec l'argument 1L
         verify(teacherRepository, times(1)).findById(1L);
 
-        // Vérifier que le résultat est correct
+        // Vérification que le résultat est correct
         assertEquals(teacher, foundTeacher);
     }
 }

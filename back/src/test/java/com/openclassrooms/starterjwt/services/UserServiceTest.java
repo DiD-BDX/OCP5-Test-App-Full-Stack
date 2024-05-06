@@ -1,52 +1,52 @@
+// Ce package contient les tests pour la classe UserService
 package com.openclassrooms.starterjwt.services;
 
+// Importations nécessaires
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
-
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.boot.test.context.SpringBootTest;
-
 import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.repository.UserRepository;
-
 import java.util.Optional;
 
-@SpringBootTest
+// Classe de test pour UserService
 public class UserServiceTest {
 
+    // Injection des mocks
     @InjectMocks
     private UserService userService;
-
     @Mock
     private UserRepository userRepository;
 
+    // Test pour vérifier que la méthode delete() fonctionne correctement
     @Test
     public void testDelete() {
-        // Appeler la méthode à tester
+        // Appel de la méthode à tester
         userService.delete(1L);
 
-        // Vérifier que la méthode deleteById a été appelée
+        // Vérification que la méthode deleteById() du repository a été appelée une fois avec l'argument 1L
         verify(userRepository, times(1)).deleteById(1L);
     }
 
+    // Test pour vérifier que la méthode findById() fonctionne correctement
     @Test
     public void testFindById() {
-        // Créer un objet User
+        // Création d'un objet User
         User user = new User();
         user.setId(1L);
 
-        // Configurer le mock pour renvoyer cet objet
+        // Configuration du mock pour retourner cet objet lors de l'appel à userRepository.findById()
         when(userRepository.findById(1L)).thenReturn(Optional.of(user));
 
-        // Appeler la méthode à tester
+        // Appel de la méthode à tester
         User foundUser = userService.findById(1L);
 
-        // Vérifier que la méthode findById a été appelée
+        // Vérification que la méthode findById() du repository a été appelée une fois avec l'argument 1L
         verify(userRepository, times(1)).findById(1L);
 
-        // Vérifier que le résultat est correct
+        // Vérification que le résultat est correct
         assertEquals(user, foundUser);
     }
 }

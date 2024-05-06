@@ -112,7 +112,7 @@ public class SessionControllerTest {
     }
 
     @Test
-    public void testSave() {
+    public void testDelete() {
         // Créer un objet Session
         Session session = new Session();
         session.setId(1L);

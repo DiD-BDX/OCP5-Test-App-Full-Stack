@@ -1,31 +1,32 @@
+// Importation des dépendances nécessaires pour les tests
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
-//import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
 import { MatCardModule } from '@angular/material/card';
-//import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-//import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { expect } from '@jest/globals';
-
 import { of, throwError } from 'rxjs';
 import { LoginComponent } from './login.component';
 import { AuthService } from '../../services/auth.service';
 import { SessionService } from 'src/app/services/session.service';
 import { Router } from '@angular/router';
 
+// Définition du groupe de tests pour le composant LoginComponent
 describe('LoginComponent', () => {
+  // Déclaration des variables pour le composant et son environnement de test
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
   let authService: AuthService;
   let sessionService: SessionService;
   let router: Router;
 
+  // Configuration initiale avant chaque test
   beforeEach(async () => {
+    // Création des mocks pour les services
     const authServiceMock = {
       login: jest.fn().mockReturnValue(of({}))
     };
@@ -38,6 +39,7 @@ describe('LoginComponent', () => {
       navigate: jest.fn()
     };
 
+    // Configuration du module de test avec le composant à tester et les services mockés
     await TestBed.configureTestingModule({
       declarations: [LoginComponent],
       providers: [
@@ -56,6 +58,8 @@ describe('LoginComponent', () => {
         ReactiveFormsModule]
     })
       .compileComponents();
+
+    // Création de l'environnement de test pour le composant
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     authService = TestBed.inject(AuthService);
@@ -63,67 +67,86 @@ describe('LoginComponent', () => {
     router = TestBed.inject(Router);
     fixture.detectChanges();
   });
+
+  // Test pour vérifier que le composant est bien créé
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should call login on the AuthService when submit is called', () => { // test d'integration
-    // Arrange
+  // Test pour vérifier que la méthode login() de AuthService est appelée quand submit() est appelée
+  it('should call login on the AuthService when submit is called', () => {
+    // Configuration du formulaire
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-    // Act
+
+    // Appel de la méthode à tester
     component.submit();
-    // Assert
+
+    // Vérification que la méthode login() a été appelée
     expect(authService.login).toHaveBeenCalled();
   });
 
-  it('should call logIn on the SessionService when login is successful', () => { // test d'integration
-    // Arrange
+  // Test pour vérifier que la méthode logIn() de SessionService est appelée quand le login est réussi
+  it('should call logIn on the SessionService when login is successful', () => {
+    // Configuration du formulaire
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-    // Act
+
+    // Appel de la méthode à tester
     component.submit();
-    // Assert
+
+    // Vérification que la méthode logIn() a été appelée
     expect(sessionService.logIn).toHaveBeenCalled();
   });
 
-  it('should navigate to /sessions when login is successful', () => { // test d'integration
-    // Arrange
+  // Test pour vérifier que la méthode navigate() de Router est appelée avec ['/sessions'] quand le login est réussi
+  it('should navigate to /sessions when login is successful', () => {
+    // Configuration du formulaire
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-    // Act
+
+    // Appel de la méthode à tester
     component.submit();
-    // Assert
+
+    // Vérification que la méthode navigate() a été appelée avec ['/sessions']
     expect(router.navigate).toHaveBeenCalledWith(['/sessions']);
   });
 
-  it('should set onError to true when login fails', () => { // test d'integration
-    // Arrange
+  // Test pour vérifier que onError est mis à true quand le login échoue
+  it('should set onError to true when login fails', () => {
+    // Configuration du formulaire et du mock pour simuler une erreur
     authService.login = jest.fn().mockReturnValue(throwError(() => new Error('error')));
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
-    // Act
+
+    // Appel de la méthode à tester
     component.submit();
-    // Assert
+
+    // Vérification que onError est true
     expect(component.onError).toBe(true);
   });
 
+  // Test pour vérifier que le champ email est invalide quand il est vide
   it('should set email field as invalid when it is empty', () => {
-    // Arrange
+    // Configuration du champ email
     component.form.controls['email'].setValue('');
-    // Act
+
+    // Déclenchement de la détection de changements
     fixture.detectChanges();
-    // Assert
+
+    // Vérification que le champ email est invalide
     expect(component.form.controls['email'].invalid).toBe(true);
   });
 
+  // Test pour vérifier que le champ password est invalide quand il est vide
   it('should set password field as invalid when it is empty', () => {
-    // Arrange
+    // Configuration du champ password
     component.form.controls['password'].setValue('');
-    // Act
+
+    // Déclenchement de la détection de changements
     fixture.detectChanges();
-    // Assert
+
+    // Vérification que le champ password est invalide
     expect(component.form.controls['password'].invalid).toBe(true);
   });
-  
 });
