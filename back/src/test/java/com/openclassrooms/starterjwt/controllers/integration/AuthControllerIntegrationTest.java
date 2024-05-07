@@ -35,6 +35,7 @@ public class AuthControllerIntegrationTest {
 
     @BeforeEach
     public void setUp() {
+        userRepository.deleteAll();
         User user = new User();
         user.setEmail("test@example.com");
         user.setPassword(passwordEncoder.encode("password"));

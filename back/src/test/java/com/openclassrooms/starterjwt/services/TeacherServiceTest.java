@@ -4,9 +4,13 @@ package com.openclassrooms.starterjwt.services;
 // Importations nécessaires
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
 import com.openclassrooms.starterjwt.models.Teacher;
 import com.openclassrooms.starterjwt.repository.TeacherRepository;
 import java.util.Arrays;
@@ -14,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 // Classe de test pour TeacherService
+@ExtendWith(MockitoExtension.class)
 public class TeacherServiceTest {
 
     // Injection des mocks

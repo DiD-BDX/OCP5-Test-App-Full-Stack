@@ -1,6 +1,6 @@
 {
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/polyfills.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/polyfills.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/polyfills.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/polyfills.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -11,7 +11,7 @@
       "version": 3,
       "names": [],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/polyfills.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/polyfills.ts"
       ],
       "sourcesContent": [
         "/**\n * This file includes polyfills needed by Angular and is loaded before the app.\n * You can add your own extra polyfills to this file.\n *\n * This file is divided into 2 sections:\n *   1. Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers.\n *   2. Application imports. Files imported after ZoneJS that should be loaded before your main\n *      file.\n *\n * The current setup is for so-called \"evergreen\" browsers; the last versions of browsers that\n * automatically update themselves. This includes recent versions of Safari, Chrome (including\n * Opera), Edge on the desktop, and iOS and Chrome on mobile.\n *\n * Learn more in https://angular.io/guide/browser-support\n */\n\n/***************************************************************************************************\n * BROWSER POLYFILLS\n */\n\n/**\n * By default, zone.js will patch all possible macroTask and DomEvents\n * user can disable parts of macroTask/DomEvents patch by setting following flags\n * because those flags need to be set before `zone.js` being loaded, and webpack\n * will put import in the top of bundle, so user need to create a separate file\n * in this directory (for example: zone-flags.ts), and put the following flags\n * into that file, and then add the following code before importing zone.js.\n * import './zone-flags';\n *\n * The flags allowed in zone-flags.ts are listed here.\n *\n * The following flags will work for all browsers.\n *\n * (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame\n * (window as any).__Zone_disable_on_property = true; // disable patch onProperty such as onclick\n * (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames\n *\n *  in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js\n *  with the following flag, it will bypass `zone.js` patch for IE/Edge\n *\n *  (window as any).__Zone_enable_cross_context_check = true;\n *\n */\n\n/***************************************************************************************************\n * Zone JS is required by default for Angular itself.\n */\nimport 'zone.js';  // Included with Angular CLI.\n\n\n/***************************************************************************************************\n * APPLICATION IMPORTS\n */\n"
@@ -20,10 +20,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f71066145c20e4bf1ed514d117e9aa898dbc315e"
+    "hash": "aca5f3e19f2ccad454dd13812c5b1eaf63c7d976"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/session.service.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/session.service.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/session.service.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/session.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -439,7 +439,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/session.service.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/session.service.ts"
       ],
       "sourcesContent": [
         "import { Injectable } from '@angular/core';\nimport { BehaviorSubject, Observable } from 'rxjs';\nimport { SessionInformation } from '../interfaces/sessionInformation.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class SessionService {\n\n  public isLogged = false;\n  public sessionInformation: SessionInformation | undefined;\n\n  private isLoggedSubject = new BehaviorSubject<boolean>(this.isLogged);\n\n  public $isLogged(): Observable<boolean> {\n    return this.isLoggedSubject.asObservable();\n  }\n\n  public logIn(user: SessionInformation): void {\n    this.sessionInformation = user;\n    this.isLogged = true;\n    this.next();\n  }\n\n  public logOut(): void {\n    this.sessionInformation = undefined;\n    this.isLogged = false;\n    this.next();\n  }\n\n  private next(): void {\n    this.isLoggedSubject.next(this.isLogged);\n  }\n}\n"
@@ -448,10 +448,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "7149e4f68419e0679ccbd35b8e4e05138fb691d4"
+    "hash": "43582bdce4db90f06aa61554c320f3abb6c0cf77"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/user.service.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/user.service.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/user.service.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/user.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -750,7 +750,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/user.service.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/user.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { User } from '../interfaces/user.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class UserService {\n\n  private pathService = 'api/user';\n\n  constructor(private httpClient: HttpClient) { }\n\n  public getById(id: string): Observable<User> {\n    return this.httpClient.get<User>(`${this.pathService}/${id}`);\n  }\n\n  public delete(id: string): Observable<any> {\n    return this.httpClient.delete(`${this.pathService}/${id}`);\n  }\n}\n"
@@ -759,10 +759,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "81ac26c3a15bf3508e5eef5d1416711b29f96704"
+    "hash": "0c3510b4797b8cef0877a7aed79f1018c90f76b8"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/me/me.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/me/me.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/me/me.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/me/me.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -2435,8 +2435,8 @@
         "MeComponent_div_10_Template"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/me/me.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/me/me.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/me/me.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/me/me.component.html"
       ],
       "sourcesContent": [
         "import { Component, OnInit } from '@angular/core';\n//import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { Router } from '@angular/router';\nimport { User } from '../../interfaces/user.interface';\nimport { SessionService } from '../../services/session.service';\nimport { UserService } from '../../services/user.service';\n\n@Component({\n  selector: 'app-me',\n  templateUrl: './me.component.html',\n  styleUrls: ['./me.component.scss']\n})\nexport class MeComponent implements OnInit {\n\n  public user: User | undefined;\n\n  constructor(private router: Router,\n              private sessionService: SessionService,\n              private matSnackBar: MatSnackBar,\n              private userService: UserService) {\n  }\n\n  public ngOnInit(): void {\n    this.userService\n      .getById(this.sessionService.sessionInformation!.id.toString())\n      .subscribe((user: User) => this.user = user);\n  }\n\n  public back(): void {\n    window.history.back();\n  }\n\n  public delete(): void {\n    this.userService\n      .delete(this.sessionService.sessionInformation!.id.toString())\n      .subscribe((_) => {\n        this.matSnackBar.open(\"Your account has been deleted !\", 'Close', { duration: 3000 });\n        this.sessionService.logOut();\n        this.router.navigate(['/']);\n      })\n  }\n\n}\n",
@@ -2446,10 +2446,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "45d934c63e70e8710cd5b9c6347a1acdcf9be993"
+    "hash": "ae7c4941d252ca08b5754cba159e584694ed0ed1"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/not-found/not-found.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/not-found/not-found.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -2736,8 +2736,8 @@
         "ɵɵelementEnd"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/not-found/not-found.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/components/not-found/not-found.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-not-found',\n  templateUrl: './not-found.component.html',\n  styleUrls: ['./not-found.component.scss']\n})\nexport class NotFoundComponent {\n}\n",
@@ -2747,10 +2747,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "49ad1d0f3f20cfa1f6f648065bc9f24d586f7346"
+    "hash": "437a4d204cd9198745c5d6d3611547ec2c4a5f59"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/guards/auth.guard.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/guards/auth.guard.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/guards/auth.guard.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/guards/auth.guard.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3087,7 +3087,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/guards/auth.guard.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/guards/auth.guard.ts"
       ],
       "sourcesContent": [
         "import {Injectable} from \"@angular/core\";\nimport { Router } from \"@angular/router\"; \nimport { SessionService } from \"../services/session.service\";\n\n@Injectable({providedIn: 'root'})\nexport class AuthGuard  {\n\n  constructor( \n    private router: Router,\n    private sessionService: SessionService,\n  ) {\n  }\n\n  public canActivate(): boolean {\n    if (!this.sessionService.isLogged) {\n      this.router.navigate(['login']);\n      return false;\n    }\n    return true;\n  }\n}"
@@ -3096,10 +3096,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "008131471acff2a50befde698f32cfb308ec4b71"
+    "hash": "77d21d4e5169d6f7762b9c2287fd72ec84737e27"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/guards/unauth.guard.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/guards/unauth.guard.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/guards/unauth.guard.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/guards/unauth.guard.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3436,7 +3436,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/guards/unauth.guard.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/guards/unauth.guard.ts"
       ],
       "sourcesContent": [
         "import {Injectable} from \"@angular/core\";\nimport { Router } from \"@angular/router\"; \nimport { SessionService } from \"../services/session.service\";\n\n@Injectable({providedIn: 'root'})\nexport class UnauthGuard  {\n\n  constructor( \n    private router: Router,\n    private sessionService: SessionService,\n  ) {\n  }\n\n  public canActivate(): boolean {\n    if (this.sessionService.isLogged) {\n      this.router.navigate(['rentals']);\n      return false;\n    }\n    return true;\n  }\n}"
@@ -3445,10 +3445,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c1c3db551b4129a286094d4d5dcd9d6c27802814"
+    "hash": "4dea9c7db3f451050c0f1fa65e786230068d8f22"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app-routing.module.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app-routing.module.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app-routing.module.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app-routing.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -3797,7 +3797,7 @@
         "forRoot"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app-routing.module.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app-routing.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { MeComponent } from './components/me/me.component';\nimport { NotFoundComponent } from './components/not-found/not-found.component';\nimport { AuthGuard } from './guards/auth.guard';\nimport { UnauthGuard } from './guards/unauth.guard';\n\nconst routes: Routes = [\n  {\n    path: '',\n    canActivate: [UnauthGuard],\n    loadChildren: () => import('./features/auth/auth.module').then(m => m.AuthModule)\n  },\n  {\n    path: 'sessions',\n    canActivate: [AuthGuard],\n    loadChildren: () => import('./features/sessions/sessions.module').then(m => m.SessionsModule)\n  },\n  {\n    path: 'me',\n    canActivate: [AuthGuard],\n    component: MeComponent\n  },\n  { path: '404', component: NotFoundComponent },\n  { path: '**', redirectTo: '404' }\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule {\n}\n"
@@ -3806,10 +3806,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b7bc36076ac46831499c7c8f6fabb8a48ef369f9"
+    "hash": "8659a90b2e2877263585f9c458d731a352906b24"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/services/auth.service.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/services/auth.service.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/services/auth.service.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/services/auth.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -4109,7 +4109,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/services/auth.service.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/services/auth.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { LoginRequest } from '../interfaces/loginRequest.interface';\nimport { RegisterRequest } from '../interfaces/registerRequest.interface';\nimport { SessionInformation } from 'src/app/interfaces/sessionInformation.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AuthService {\n\n  private pathService = 'api/auth';\n\n  constructor(private httpClient: HttpClient) { }\n\n  public register(registerRequest: RegisterRequest): Observable<void> {\n    return this.httpClient.post<void>(`${this.pathService}/register`, registerRequest);\n  }\n\n  public login(loginRequest: LoginRequest): Observable<SessionInformation> {\n    return this.httpClient.post<SessionInformation>(`${this.pathService}/login`, loginRequest);\n  }\n}\n"
@@ -4118,10 +4118,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "0377c069ca28026a2e63861fbeaa4e763a0856f0"
+    "hash": "6f0bee446670364c5e163abb2dc67ee0c794a337"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5138,8 +5138,8 @@
         "notLogged_r3"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.component.html"
       ],
       "sourcesContent": [
         "import { Component, OnInit } from '@angular/core';\nimport { Router } from '@angular/router';\nimport { Observable } from 'rxjs';\nimport { AuthService } from './features/auth/services/auth.service';\nimport { SessionInformation } from './interfaces/sessionInformation.interface';\nimport { SessionService } from './services/session.service';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  constructor(\n    private authService: AuthService,\n    private router: Router,\n    private sessionService: SessionService) {\n  }\n\n  public $isLogged(): Observable<boolean> {\n    return this.sessionService.$isLogged();\n  }\n\n  public logout(): void {\n    this.sessionService.logOut();\n    this.router.navigate([''])\n  }\n}\n",
@@ -5149,10 +5149,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "77b4a0c88665cac2d3def0576444046198f441ea"
+    "hash": "2b36f2fa0b991c740ca9407be306fa38578df38a"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/interceptors/jwt.interceptor.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/interceptors/jwt.interceptor.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/interceptors/jwt.interceptor.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/interceptors/jwt.interceptor.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5471,7 +5471,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/interceptors/jwt.interceptor.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/interceptors/jwt.interceptor.ts"
       ],
       "sourcesContent": [
         "import { HttpHandler, HttpInterceptor, HttpRequest } from \"@angular/common/http\";\nimport { Injectable } from \"@angular/core\";\nimport { SessionService } from '../services/session.service';\n\n@Injectable({ providedIn: 'root' })\nexport class JwtInterceptor implements HttpInterceptor {\n  constructor(private sessionService: SessionService) {}\n\n  public intercept(request: HttpRequest<any>, next: HttpHandler) {\n    if (this.sessionService.isLogged) {\n      request = request.clone({\n        setHeaders: {\n          Authorization: `Bearer ${this.sessionService.sessionInformation!.token}`,\n        },\n      });\n    }\n    return next.handle(request);\n  }\n}\n"
@@ -5480,10 +5480,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f6bea2fb4edf487dbc784085b97600a21d5aa4a0"
+    "hash": "deaf3f70ca59ef769d387adf3f2ee8a2e93aa072"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.module.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.module.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.module.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5691,7 +5691,7 @@
         "imports"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/app.module.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/app.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\n//import { MatLegacySnackBarModule as MatSnackBarModule } from '@angular/material/legacy-snack-bar';\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { NotFoundComponent } from './components/not-found/not-found.component';\n//import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';\nimport { JwtInterceptor } from './interceptors/jwt.interceptor';\n//import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';\nimport { MatCardModule } from '@angular/material/card';\nimport { FlexLayoutModule } from '@angular/flex-layout';\nimport { MeComponent } from './components/me/me.component';\n\nconst materialModule = [\n  MatButtonModule,\n  MatCardModule,\n  MatIconModule,\n  MatSnackBarModule,\n  MatToolbarModule,\n]\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    NotFoundComponent,\n    MeComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    BrowserAnimationsModule, \n    FlexLayoutModule,\n    HttpClientModule,\n    ...materialModule\n  ],\n  providers: [\n    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },\n  ],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n"
@@ -5700,10 +5700,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "489773d105bf582b790c80ccc59e1b48e05b99ee"
+    "hash": "eb83bb2d93bd63addac7060edb251ec079e85262"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/environments/environment.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/environments/environment.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/environments/environment.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/environments/environment.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5731,7 +5731,7 @@
         "production"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/environments/environment.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/environments/environment.ts"
       ],
       "sourcesContent": [
         "export const environment = {\n  baseUrl: 'localhost:8080/api/',\n  production: false\n};\n"
@@ -5740,10 +5740,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "1fb08572a8f58db61b10af63c08f728c3fb2c81c"
+    "hash": "8910a95cf277c7fa66e40bf6c7c723727727d583"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/main.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/main.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/main.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/main.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -5881,7 +5881,7 @@
         "error"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/main.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/main.ts"
       ],
       "sourcesContent": [
         "import { enableProdMode } from '@angular/core';\nimport { platformBrowserDynamic } from '@angular/platform-browser-dynamic';\n\nimport { AppModule } from './app/app.module';\nimport { environment } from './environments/environment';\n\nif (environment.production) {\n  enableProdMode();\n}\n\nplatformBrowserDynamic().bootstrapModule(AppModule)\n  .catch(err => console.error(err));\n"
@@ -5890,10 +5890,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "70e417d595b210fd969fbe80589d7687d337fc5d"
+    "hash": "30a7eee381d4bb9f0123f6658b1e44872dba5f19"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/login/login.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/login/login.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/login/login.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/login/login.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -7086,8 +7086,8 @@
         "invalid"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/login/login.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/login/login.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/login/login.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/login/login.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\nimport { FormBuilder, Validators } from '@angular/forms';\nimport { Router } from '@angular/router';\nimport { SessionInformation } from 'src/app/interfaces/sessionInformation.interface';\nimport { SessionService } from 'src/app/services/session.service';\nimport { LoginRequest } from '../../interfaces/loginRequest.interface';\nimport { AuthService } from '../../services/auth.service';\n\n@Component({\n  selector: 'app-login',\n  templateUrl: './login.component.html',\n  styleUrls: ['./login.component.scss']\n})\nexport class LoginComponent {\n  public hide = true;\n  public onError = false;\n\n  public form = this.fb.group({\n    email: [\n      '',\n      [\n        Validators.required,\n        Validators.email\n      ]\n    ],\n    password: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3)\n      ]\n    ]\n  });\n\n  constructor(private authService: AuthService,\n              private fb: FormBuilder,\n              private router: Router,\n              private sessionService: SessionService) {\n  }\n\n  public submit(): void {\n    const loginRequest = this.form.value as LoginRequest;\n    this.authService.login(loginRequest).subscribe({\n      next: (response: SessionInformation) => {\n        this.sessionService.logIn(response);\n        this.router.navigate(['/sessions']);\n      },\n      error: error => this.onError = true,\n    });\n  }\n}\n",
@@ -7097,10 +7097,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "9d0cb89b27fc40bfc4d75d64bd6fd9994dbd0c6b"
+    "hash": "e30e0ec0951e6fa57c18e2843bd8f213a3e4e1bb"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/register/register.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/register/register.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/register/register.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/register/register.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -8095,8 +8095,8 @@
         "invalid"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/register/register.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/components/register/register.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/register/register.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/components/register/register.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\nimport { FormBuilder, Validators } from '@angular/forms';\nimport { Router } from '@angular/router';\nimport { AuthService } from '../../services/auth.service';\nimport { RegisterRequest } from '../../interfaces/registerRequest.interface';\n\n@Component({\n  selector: 'app-register',\n  templateUrl: './register.component.html',\n  styleUrls: ['./register.component.scss']\n})\nexport class RegisterComponent {\n\n  public onError = false;\n\n  public form = this.fb.group({\n    email: [\n      '',\n      [\n        Validators.required,\n        Validators.email\n      ]\n    ],\n    firstName: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3),\n        Validators.max(20)\n      ]\n    ],\n    lastName: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3),\n        Validators.max(20)\n      ]\n    ],\n    password: [\n      '',\n      [\n        Validators.required,\n        Validators.min(3),\n        Validators.max(40)\n      ]\n    ]\n  });\n\n  constructor(private authService: AuthService,\n              private fb: FormBuilder,\n              private router: Router) {\n  }\n\n  public submit(): void {\n    const registerRequest = this.form.value as RegisterRequest;\n    this.authService.register(registerRequest).subscribe({\n        next: (_: void) => this.router.navigate(['/login']),\n        error: _ => this.onError = true,\n      }\n    );\n  }\n\n}\n",
@@ -8106,10 +8106,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b398ec21c00c69ca196484cefd51e9a68a25cf70"
+    "hash": "43a169ace51a3198dcf3d638f342db3d12c4e81f"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/auth-routing.module.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/auth-routing.module.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/auth-routing.module.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/auth-routing.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -8306,7 +8306,7 @@
         "forChild"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/auth-routing.module.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/auth-routing.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { LoginComponent } from './components/login/login.component';\nimport { RegisterComponent } from './components/register/register.component';\n\n\nconst routes: Routes = [\n  { title: 'Login', path: 'login', component: LoginComponent },\n  { title: 'Register', path: 'register', component: RegisterComponent }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class AuthRoutingModule { }\n"
@@ -8315,10 +8315,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "9a1dfc768fcce6baead72445a30ea92c27ef12a3"
+    "hash": "b39b7af95d98bcab8055c4e3ef81b01ff827e50a"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/auth.module.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/auth.module.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/auth.module.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/auth.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -8518,7 +8518,7 @@
         "_3"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/auth/auth.module.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/auth/auth.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { AuthRoutingModule } from './auth-routing.module';\nimport { RegisterComponent } from './components/register/register.component';\nimport { LoginComponent } from './components/login/login.component';\n//import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';\nimport { MatCardModule } from '@angular/material/card';\n//import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';\nimport { MatFormFieldModule } from '@angular/material/form-field';\n//import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';\nimport { MatButtonModule } from '@angular/material/button';\n//import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';\nimport { MatInputModule } from '@angular/material/input';\nimport { FlexLayoutModule } from '@angular/flex-layout';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { MatIconModule } from '@angular/material/icon';\n\nconst materialModules = [\n  MatButtonModule,\n  MatCardModule,\n  MatFormFieldModule,\n  MatIconModule,\n  MatInputModule\n]\n\n@NgModule({\n  declarations: [\n    RegisterComponent,\n    LoginComponent\n  ],\n  imports: [\n    AuthRoutingModule,\n    CommonModule,\n    FlexLayoutModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ...materialModules\n  ]\n})\nexport class AuthModule { }\n"
@@ -8527,10 +8527,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "51be2376e0404ff336ea1b2fc2d5653b154ea358"
+    "hash": "df4bb474eea901a7a83e151ae04101dc8f6cdcd0"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/services/session-api.service.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/services/session-api.service.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/services/session-api.service.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/services/session-api.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -9018,7 +9018,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/services/session-api.service.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/services/session-api.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { Session } from '../interfaces/session.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class SessionApiService {\n\n  private pathService = 'api/session';\n\n  constructor(private httpClient: HttpClient) {\n  }\n\n  public all(): Observable<Session[]> {\n    return this.httpClient.get<Session[]>(this.pathService);\n  }\n\n  public detail(id: string): Observable<Session> {\n    return this.httpClient.get<Session>(`${this.pathService}/${id}`);\n  }\n\n  public delete(id: string): Observable<any> {\n    return this.httpClient.delete(`${this.pathService}/${id}`);\n  }\n\n  public create(session: Session): Observable<Session> {\n    return this.httpClient.post<Session>(this.pathService, session);\n  }\n\n  public update(id: string, session: Session): Observable<Session> {\n    return this.httpClient.put<Session>(`${this.pathService}/${id}`, session);\n  }\n\n  public participate(id: string, userId: string): Observable<void> {\n    return this.httpClient.post<void>(`${this.pathService}/${id}/participate/${userId}`, null);\n  }\n\n  public unParticipate(id: string, userId: string): Observable<void> {\n    return this.httpClient.delete<void>(`${this.pathService}/${id}/participate/${userId}`);\n  }\n\n}\n"
@@ -9027,10 +9027,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "59531789846918455cea38ef699dbe3974ed489a"
+    "hash": "f09392baa228bdf27b4f58a8c997e9d898142203"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/teacher.service.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/teacher.service.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/teacher.service.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/teacher.service.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -9329,7 +9329,7 @@
         "providedIn"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/services/teacher.service.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/services/teacher.service.ts"
       ],
       "sourcesContent": [
         "import { HttpClient } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { Teacher } from '../interfaces/teacher.interface';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class TeacherService {\n\n  private pathService = 'api/teacher';\n\n  constructor(private httpClient: HttpClient) { }\n\n  public all(): Observable<Teacher[]> {\n    return this.httpClient.get<Teacher[]>(this.pathService);\n  }\n\n  public detail(id: string): Observable<Teacher> {\n    return this.httpClient.get<Teacher>(`${this.pathService}/${id}`);\n  }\n}\n"
@@ -9338,10 +9338,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "208442fcbe012a03f8f8d3170232e45dfbcd880d"
+    "hash": "5a13880f3fa962a2c2eace32ed23a7eb6fe71140"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/detail/detail.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/detail/detail.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/detail/detail.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/detail/detail.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -12484,8 +12484,8 @@
         "DetailComponent_mat_card_1_Template"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/detail/detail.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/detail/detail.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/detail/detail.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/detail/detail.component.html"
       ],
       "sourcesContent": [
         "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder } from '@angular/forms';\n//import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { ActivatedRoute, Router } from '@angular/router';\nimport { Teacher } from '../../../../interfaces/teacher.interface';\nimport { SessionService } from '../../../../services/session.service';\nimport { TeacherService } from '../../../../services/teacher.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-detail',\n  templateUrl: './detail.component.html',\n  styleUrls: ['./detail.component.scss']\n})\nexport class DetailComponent implements OnInit {\n  public session: Session | undefined;\n  public teacher: Teacher | undefined;\n\n  public isParticipate = false;\n  public isAdmin = false;\n\n  public sessionId: string;\n  public userId: string;\n\n  constructor(\n    private route: ActivatedRoute,\n    private fb: FormBuilder,\n    private sessionService: SessionService,\n    private sessionApiService: SessionApiService,\n    private teacherService: TeacherService,\n    private matSnackBar: MatSnackBar,\n    private router: Router) {\n    this.sessionId = this.route.snapshot.paramMap.get('id')!;\n    this.isAdmin = this.sessionService.sessionInformation!.admin;\n    this.userId = this.sessionService.sessionInformation!.id.toString();\n  }\n\n  public ngOnInit(): void {\n    this.fetchSession();\n  }\n\n  public back() {\n    window.history.back();\n  }\n\n  public delete(): void {\n    this.sessionApiService\n      .delete(this.sessionId)\n      .subscribe((_: any) => {\n          this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });\n          this.router.navigate(['sessions']);\n        }\n      );\n  }\n\n  public participate(): void {\n    this.sessionApiService.participate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\n  }\n\n  public unParticipate(): void {\n    this.sessionApiService.unParticipate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\n  }\n\n  private fetchSession(): void {\n    this.sessionApiService\n      .detail(this.sessionId)\n      .subscribe((session: Session) => {\n        this.session = session;\n        this.isParticipate = session.users.some(u => u === this.sessionService.sessionInformation!.id);\n        this.teacherService\n          .detail(session.teacher_id.toString())\n          .subscribe((teacher: Teacher) => this.teacher = teacher);\n      });\n  }\n\n}\n",
@@ -12495,10 +12495,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "dcc25b205e6ddc831c50586e091add3d04bcc43e"
+    "hash": "e898cc59d67d243fa8285309fdbe58dc6e3a402e"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/form/form.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/form/form.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -14795,8 +14795,8 @@
         "FormComponent_mat_card_content_9_Template"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/form/form.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/form/form.component.html"
       ],
       "sourcesContent": [
         "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder, FormGroup, Validators } from '@angular/forms';\n//import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { ActivatedRoute, Router } from '@angular/router';\nimport { SessionService } from '../../../../services/session.service';\nimport { TeacherService } from '../../../../services/teacher.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-form',\n  templateUrl: './form.component.html',\n  styleUrls: ['./form.component.scss']\n})\nexport class FormComponent implements OnInit {\n\n  public onUpdate: boolean = false;\n  public sessionForm: FormGroup | undefined;\n  public teachers$ = this.teacherService.all();\n  private id: string | undefined;\n\n  constructor(\n    private route: ActivatedRoute,\n    private fb: FormBuilder,\n    private matSnackBar: MatSnackBar,\n    private sessionApiService: SessionApiService,\n    private sessionService: SessionService,\n    private teacherService: TeacherService,\n    private router: Router\n  ) {\n  }\n\n  public ngOnInit(): void {\n    if (!this.sessionService.sessionInformation!.admin) {\n      this.router.navigate(['/sessions']);\n    }\n    const url = this.router.url;\n    if (url.includes('update')) {\n      this.onUpdate = true;\n      this.id = this.route.snapshot.paramMap.get('id')!;\n      this.sessionApiService\n        .detail(this.id)\n        .subscribe((session: Session) => this.initForm(session));\n    } else {\n      this.initForm();\n    }\n  }\n\n  public submit(): void {\n    const session = this.sessionForm?.value as Session;\n\n    if (!this.onUpdate) {\n      this.sessionApiService\n        .create(session)\n        .subscribe((_: Session) => this.exitPage('Session created !'));\n    } else {\n      this.sessionApiService\n        .update(this.id!, session)\n        .subscribe((_: Session) => this.exitPage('Session updated !'));\n    }\n  }\n\n  private initForm(session?: Session): void {\n    this.sessionForm = this.fb.group({\n      name: [\n        session ? session.name : '',\n        [Validators.required]\n      ],\n      date: [\n        session ? new Date(session.date).toISOString().split('T')[0] : '',\n        [Validators.required]\n      ],\n      teacher_id: [\n        session ? session.teacher_id : '',\n        [Validators.required]\n      ],\n      description: [\n        session ? session.description : '',\n        [\n          Validators.required,\n          Validators.max(2000)\n        ]\n      ],\n    });\n  }\n\n  private exitPage(message: string): void {\n    this.matSnackBar.open(message, 'Close', { duration: 3000 });\n    this.router.navigate(['sessions']);\n  }\n}\n",
@@ -14806,10 +14806,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f70923abdb7b03a3cddda0c782d9e0a836cb9742"
+    "hash": "046c72713db238f2f646fae03471048a327cfc44"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/list/list.component.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/list/list.component.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/list/list.component.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/list/list.component.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -16325,8 +16325,8 @@
         "ɵɵpipeBind1"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/list/list.component.ts",
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/components/list/list.component.html"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/list/list.component.ts",
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/components/list/list.component.html"
       ],
       "sourcesContent": [
         "import { Component } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { SessionInformation } from '../../../../interfaces/sessionInformation.interface';\nimport { SessionService } from '../../../../services/session.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.scss']\n})\nexport class ListComponent {\n\n  public sessions$: Observable<Session[]> = this.sessionApiService.all();\n\n  constructor(\n    private sessionService: SessionService,\n    private sessionApiService: SessionApiService\n  ) { }\n\n  get user(): SessionInformation | undefined {\n    return this.sessionService.sessionInformation;\n  }\n}\n",
@@ -16336,10 +16336,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "79d9b82a146baf1a4fd03cdc80c8aa742fbcb459"
+    "hash": "2619501db4ff00a6b0614d4f9b7ddee7963f8f7d"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/sessions-routing.module.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/sessions-routing.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -16537,7 +16537,7 @@
         "forChild"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/sessions-routing.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { DetailComponent } from './components/detail/detail.component';\nimport { FormComponent } from './components/form/form.component';\nimport { ListComponent } from './components/list/list.component';\n\nconst routes: Routes = [\n  { path: '', title: 'Sessions', component: ListComponent },\n  { path: 'detail/:id', title: 'Sessions - detail', component: DetailComponent },\n  { path: 'create', title: 'Sessions - create', component: FormComponent },\n  { path: 'update/:id', title: 'Sessions - update', component: FormComponent }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class SessionsRoutingModule {\n}\n"
@@ -16546,10 +16546,10 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "e530f86ddde2fa6f5e559ded1b317e4eecb02ea6"
+    "hash": "8df023782b13ca23ad8b6c82d082292e553867f8"
   },
-  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions.module.ts": {
-    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions.module.ts",
+  "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/sessions.module.ts": {
+    "path": "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/sessions.module.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -16763,7 +16763,7 @@
         "_3"
       ],
       "sources": [
-        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/Testez-une-application-full-stack/front/src/app/features/sessions/sessions.module.ts"
+        "/Users/didierbd/NOMADS MEDIA Dropbox/Didier BD/DOCUMENTS/FORMATIONS/OPENCLASSROOMS/DEV FULL STACK et ANGULAR/P5 - Testez une app Full Stack/OC-P5/OCP5-Test-App-Full-Stack/front/src/app/features/sessions/sessions.module.ts"
       ],
       "sourcesContent": [
         "import { NgModule } from '@angular/core';\nimport { CommonModule, registerLocaleData } from '@angular/common';\nimport { FlexLayoutModule } from '@angular/flex-layout';\nimport { ReactiveFormsModule } from '@angular/forms';\n//import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';\nimport { MatButtonModule } from '@angular/material/button';\n//import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';\nimport { MatCardModule } from '@angular/material/card';\n//import { MatLegacyFormFieldModule as MatFormFieldModule } from '@angular/material/legacy-form-field';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\n//import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';\nimport { MatInputModule } from '@angular/material/input';\n//import { MatLegacySelectModule as MatSelectModule } from '@angular/material/legacy-select';\nimport { MatSelectModule } from '@angular/material/select';\n//import { MatLegacySnackBarModule as MatSnackBarModule } from '@angular/material/legacy-snack-bar';\nimport { MatSnackBarModule } from '@angular/material/snack-bar';\nimport { ListComponent } from './components/list/list.component';\nimport { FormComponent } from './components/form/form.component';\nimport { DetailComponent } from './components/detail/detail.component';\nimport { SessionsRoutingModule } from './sessions-routing.module';\nimport localeFr from '@angular/common/locales/fr';\nregisterLocaleData(localeFr);\n\nconst materialModules = [\n  MatButtonModule,\n  MatCardModule,\n  MatFormFieldModule,\n  MatIconModule,\n  MatInputModule,\n  MatSnackBarModule,\n  MatSelectModule\n];\n\n@NgModule({\n  declarations: [\n    ListComponent,\n    FormComponent,\n    DetailComponent\n  ],\n  imports: [\n    CommonModule,\n    FlexLayoutModule,\n    ReactiveFormsModule,\n    SessionsRoutingModule,\n    ...materialModules\n  ]\n})\nexport class SessionsModule { }\n"
@@ -16772,6 +16772,6 @@
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8e61cafab3d33f8b2b568e8093945aad8bf5a94b"
+    "hash": "166a69803a9b7130ee83fdb4d54d77b3ec42c559"
   }
 }
