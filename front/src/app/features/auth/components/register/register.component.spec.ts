@@ -35,7 +35,7 @@ describe('RegisterComponent', () => {
       ],
       imports: [ReactiveFormsModule]
     })
-      .compileComponents(); // Compilation des composants
+      //.compileComponents(); // Compilation des composants
 
     // Création de l'environnement de test pour le composant
     fixture = TestBed.createComponent(RegisterComponent);

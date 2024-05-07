@@ -69,12 +69,12 @@ describe('LoginComponent', () => {
   });
 
   // Test pour vérifier que le composant est bien créé
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 
   // Test pour vérifier que la méthode login() de AuthService est appelée quand submit() est appelée
-  it('should call login on the AuthService when submit is called', () => {
+  test('should call login on the AuthService when submit is called', () => {
     // Configuration du formulaire
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
@@ -87,7 +87,7 @@ describe('LoginComponent', () => {
   });
 
   // Test pour vérifier que la méthode logIn() de SessionService est appelée quand le login est réussi
-  it('should call logIn on the SessionService when login is successful', () => {
+  test('should call logIn on the SessionService when login is successful', () => {
     // Configuration du formulaire
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
@@ -100,7 +100,7 @@ describe('LoginComponent', () => {
   });
 
   // Test pour vérifier que la méthode navigate() de Router est appelée avec ['/sessions'] quand le login est réussi
-  it('should navigate to /sessions when login is successful', () => {
+  test('should navigate to /sessions when login is successful', () => {
     // Configuration du formulaire
     component.form.controls['email'].setValue('test@test.com');
     component.form.controls['password'].setValue('password');
@@ -127,7 +127,7 @@ describe('LoginComponent', () => {
   });
 
   // Test pour vérifier que le champ email est invalide quand il est vide
-  it('should set email field as invalid when it is empty', () => {
+  test('should set email field as invalid when it is empty', () => {
     // Configuration du champ email
     component.form.controls['email'].setValue('');
 
@@ -139,7 +139,7 @@ describe('LoginComponent', () => {
   });
 
   // Test pour vérifier que le champ password est invalide quand il est vide
-  it('should set password field as invalid when it is empty', () => {
+  test('should set password field as invalid when it is empty', () => {
     // Configuration du champ password
     component.form.controls['password'].setValue('');
 
